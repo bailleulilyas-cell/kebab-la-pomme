@@ -3,26 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - La Pomme Ermont</title>
+    <meta name="description" content="Contactez La Pomme Ermont, retrouvez l'adresse, les horaires, l'itinéraire Google Maps et commandez rapidement.">
+    <title>Contact & Accès - La Pomme Ermont</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="header-placeholder"></header>
-    <section class="container contact-wrap">
-        <div class="contact-box">
-            <div class="info-text">
-                <h2>Où nous trouver ?</h2>
-                <div class="divider"></div>
-                <p><strong>Adresse :</strong> 15 Rue de l'Arrivée, 95120 Ermont</p>
-                <p><strong>Téléphone :</strong> 01 34 14 24 60</p>
-                <p><strong>Horaires :</strong> Lun - Sam : 11h - 22h | Dimanche : Fermé</p>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2617.9157291114095!2d2.25916!3d48.9893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6670876793e37%3A0x29b93ece790ba882!2s15%20Rue%20de%20l&#39;Arriv%C3%A9e%2C%2095120%20Ermont!5e0!3m2!1sfr!2sfr!4v1700000000000" width="100%" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+
+    <main class="container contact-wrap">
+        <section class="contact-box">
+            <div class="section-intro left">
+                <h1>Contact & accès</h1>
+                <p>Nous vous accueillons à Ermont du lundi au samedi. Pour gagner du temps, commandez directement par téléphone ou WhatsApp.</p>
             </div>
-        </div>
-    </section>
+
+            <div class="contact-grid">
+                <article class="info-card">
+                    <h2>Informations</h2>
+                    <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>Adresse :</strong> 15 Rue de l'Arrivée, 95120 Ermont</p>
+                    <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <strong>Téléphone :</strong> <a href="tel:0134142460">01 34 14 24 60</a></p>
+                    <p><i class="fa-solid fa-clock" aria-hidden="true"></i> <strong>Horaires :</strong> Lun - Sam : 11h - 22h | Dimanche : Fermé</p>
+                    <div class="contact-actions">
+                        <a href="tel:0134142460" class="btn btn-primary">Appeler</a>
+                        <a href="https://wa.me/33134142460" class="btn btn-whatsapp" target="_blank" rel="noreferrer">WhatsApp</a>
+                    </div>
+                </article>
+
+                <article class="info-card map-card">
+                    <h2>Itinéraire</h2>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2617.9157291114095!2d2.25916!3d48.9893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6670876793e37%3A0x29b93ece790ba882!2s15%20Rue%20de%20l&#39;Arriv%C3%A9e%2C%2095120%20Ermont!5e0!3m2!1sfr!2sfr!4v1700000000000" width="100%" height="320" style="border:0; border-radius: 14px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
     <footer id="footer-placeholder"></footer>
     <script src="script.js"></script>
 </body>
