@@ -3,54 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Pomme Ermont : kebab au feu de bois, onglet de veau, grillades maison et commande rapide par téléphone ou WhatsApp.">
     <title>La Pomme Ermont | Kebab au Feu de Bois & Onglet de Veau</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="main-header">
         <div class="header-top">
-            <a href="index.html"><img src="logo.png" alt="La Pomme Ermont" class="mega-logo"></a>
+            <a href="index.html" aria-label="Retour à l'accueil La Pomme Ermont">
+                <img src="logo.png" alt="Logo La Pomme Ermont" class="mega-logo">
+            </a>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Navigation principale">
             <ul class="nav-links">
-                <li><a href="index.html" class="active">ACCUEIL</a></li>
-                <li><a href="menu.html">NOTRE CARTE</a></li>
-                <li><a href="contact.html">CONTACT & ACCÈS</a></li>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="menu.html">Notre carte</a></li>
+                <li><a href="contact.html">Contact & accès</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <span class="badge">MAÎTRE GRILLADIN DEPUIS 2000</span>
-            <h1>Le goût vrai du <br><span class="highlight">Feu de Bois</span></h1>
-            <p>Spécialiste de l'Onglet de Veau à Ermont. Une cuisine généreuse, authentique et faite maison.</p>
-            <div class="hero-btns">
-                <a href="menu.html" class="btn btn-primary">VOIR LA CARTE</a>
-                <a href="https://wa.me/33134142460" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> COMMANDER</a>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge">Maître grilladin depuis 2000</span>
+                <h1>Le goût vrai du <span class="highlight">feu de bois</span></h1>
+                <p>Spécialiste de l'onglet de veau à Ermont, nous proposons une cuisine généreuse, authentique et préparée minute.</p>
+                <div class="hero-btns">
+                    <a href="menu.html" class="btn btn-primary">Voir la carte</a>
+                    <a href="https://wa.me/33134142460" class="btn btn-whatsapp" target="_blank" rel="noreferrer">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Commander
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="valeurs container">
-        <div class="valeur-card">
-            <h3>Grillade Traditionnelle</h3>
-            <p>Toutes nos viandes sont saisies au feu de bois pour un parfum unique.</p>
-        </div>
-        <div class="valeur-card">
-            <h3>Sélection Bouchère</h3>
-            <p>Notre Onglet de Veau est choisi pour sa tendreté exceptionnelle.</p>
-        </div>
-    </section>
+        <section class="container section spacing-lg">
+            <div class="section-intro">
+                <h2>Pourquoi nos clients reviennent</h2>
+                <p>La différence La Pomme : un savoir-faire constant, des produits frais et une cuisson qui respecte chaque viande.</p>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <i class="fa-solid fa-fire-flame-curved" aria-hidden="true"></i>
+                    <h3>Cuisson au feu de bois</h3>
+                    <p>Des saveurs fumées et une texture maîtrisée sur nos kebabs, brochettes et onglets.</p>
+                </article>
+                <article class="feature-card">
+                    <i class="fa-solid fa-award" aria-hidden="true"></i>
+                    <h3>Qualité bouchère</h3>
+                    <p>Viandes sélectionnées pour leur tendreté, puis marinées selon nos recettes maison.</p>
+                </article>
+                <article class="feature-card">
+                    <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                    <h3>Service rapide</h3>
+                    <p>Sur place, à emporter ou via WhatsApp : commande simplifiée et préparations efficaces.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="cta-strip">
+                <div>
+                    <h2>Une envie maintenant ?</h2>
+                    <p>Consultez la carte complète et choisissez votre formule en quelques secondes.</p>
+                </div>
+                <a href="menu.html" class="btn btn-primary">Découvrir la carte</a>
+            </div>
+        </section>
+    </main>
 
     <footer id="footer-placeholder"></footer>
     <script src="script.js"></script>
 </body>
-</html>
-    <footer id="footer-placeholder"></footer>
-    <script src="script.js"></script>
-</body>
-
 </html>
